@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <h2>PASSWORD GENERATOR</h2>
+        <div class="row-1">
+          <div class="resultBox">
+            <span id="pass-box" class="generate">
+            </span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="left">
+            <label for="total-char">Password Length</label>
+          </div>
+          <div class="right">
+            <input
+              type="number"
+              name="length"
+              id="total-char"
+              max="30"
+              min="2"
+              value="10"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="left">
+            <label for="upperCase">Include Upper-Case Letters</label>
+          </div>
+          <div class="right">
+            <input type="checkbox" name="check" id="upper-case" checked />
+          </div>
+        </div>
+        <div class="row">
+          <div class="left">
+            <label for="lowerCase">Include lower-Case Letters</label>
+          </div>
+          <div class="right">
+            <input type="checkbox" name="check" id="lower-case" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="left">
+            <label for="numbers">Include Numbers</label>
+          </div>
+          <div class="right">
+            <input type="checkbox" name="check" id="numbers" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="left">
+            <label for="symbols">Include Symbols</label>
+          </div>
+          <div class="right">
+            <input type="checkbox" name="check" id="symbols" />
+          </div>
+        </div>
+        <div class="row">
+          <button class="btn">Generate Password</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
